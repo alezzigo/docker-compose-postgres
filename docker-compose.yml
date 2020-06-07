@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  db:
+    container_name: app_postgresql_12
+    image: postgres:12.3
+    restart: always
+    env_file:
+      - ./conf/postgresql.env
+    volumes: 
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - network_app_postgresql
+
+networks:
+  network_app_postgresql:

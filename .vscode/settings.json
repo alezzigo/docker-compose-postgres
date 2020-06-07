@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "database": "postgres",
+            "driver": "PostgreSQL",
+            "name": "Postgresql 12.3",
+            "password": "123456",
+            "port": 5432,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "admin"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
